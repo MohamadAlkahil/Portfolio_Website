@@ -1,211 +1,213 @@
+* {
+    background-color: #f7ffc2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-*{
-    background-color:   #f7ffc2;
-    box-align: center;
-    
-}
-html{
-    padding: 80px;
+html, body {
+    width: 100%;
+    height: 100%; 
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-header{
+
+header {
     border-top: 2px solid #CAC2FF;
     border-bottom: 2px solid #CAC2FF;
-    padding: 100px;
+    padding: 10%; 
 }
-h1{
+
+h1 {
     font-family: Arial, Verdana, monospace;
-    font-size: 100px;
+    font-size: 5vw; 
     text-align: center;
     color: #CAC2FF;
 }
-nav{
+
+nav {
     text-align: center;
-    padding: 10px;
+    padding: 2%;
 }
 
-input{
+input {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 3vw; 
     text-align: center;
     color: #CAC2FF;
     border: 2px solid #CAC2FF;
-    padding: 30px;
-    margin: 10px;
+    padding: 2%;
+    margin: 1%;
     transition: background-color 0.3s, color 0.3s;
 }
-input:hover{
+
+input:hover {
     background-color: #CAC2FF;
     color: #f7ffc2;
-
 }
 
-article{
+article {
     display: none;
     position: fixed;
-    top: 1%; 
-    left: 1%; 
-    width: 95%; 
-    height: 95%; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
-a{
+
+a {
     color: #CAC2FF;
-    text-decoration: none; 
-    font-style: normal; 
+    text-decoration: none;
+    font-style: normal;
 }
-a:hover{
+
+a:hover {
     background-color: #CAC2FF;
     color: #f7ffc2;
 }
-.about_div{
+.home{
+    width: 10%;
+    margin: 1%;
+}
+
+.about_div {
     font-family: Arial, Verdana, monospace;
-    font-size: 30px;
+    font-size: 2vw; 
     text-align: left;
     color: #CAC2FF;
     text-shadow: 0 0 1px #000000, 0 0 1px #000000;
     position: relative;
-    top: 20%; 
+    top: 30%;
     left: 2%;
-    width: 80%; 
-    height: 55%; 
+    width: 80%;
+    height: 80%;
 }
-#projects{
+
+#projects {
     font-family: 'Roboto', sans-serif;
     overflow: auto;
 }
-.projects_div{
+
+.projects_div {
     color: #CAC2FF;
     background-color: #CAC2FF;
 }
 
 .project_row {
-    width: 1200px;
+    width: 90%;
     height: 45%;
-    padding: 10px;
-    margin: 5px;
-    display: flex; /* Use flexbox to center its contents horizontally and vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-  }
-  
-  .project_clmn {
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_clmn {
     width: 100%;
     height: 100%;
-    margin: 10px;
+    margin: 1%;
     text-align: center;
-    display: flex; /* Use flexbox to center its contents horizontally and vertically */
-    justify-content: center; /* Center content horizontally */
+    display: flex;
+    justify-content: center;
     align-items: center;
     transition: background-color 0.3s, color 0.3s;
     border: 2px solid #CAC2FF;
 }
+
 .project_clmn:hover {
     background-color: #CAC2FF;
 }
 
 .project_Name {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 3vw; 
     text-align: center;
     color: #CAC2FF;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .project_clmn:hover .project_Name {
     background-color: #CAC2FF;
     color: #f7ffc2;
 }
 
-.DisplayProjectInfo{
+.DisplayProjectInfo {
     background-color: #494753;
     overflow: auto;
 }
-.DisplayProjectInfo h2, a, h3{
+
+.DisplayProjectInfo h2, a, h3 {
     background-color: #494753;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 2vw; 
 }
-.DisplayProjectInfo p{
+
+.DisplayProjectInfo p {
     background-color: #494753;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.5vw; 
 }
-.back_button{
+
+.back_button {
     width: 5%;
     height: 5%;
     text-align: center;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #494753;
     text-shadow: none;
-    padding: 10px;
-    margin: 10px;
+    padding: 1%;
+    margin: 1%;
     border: 2px solid #CAC2FF;
 }
 
-#FastAPI{
+#FastAPI, #BankingApplication, #BookManagementSystem, #DatingApplicationManagementSystem {
     display: none;
     position: fixed;
-    top: 1%; 
-    left: 1%; 
-    width: 95%; 
-    height: 95%;     
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
-#BankingApplication{
-    display: none;
-    position: fixed;
-    top: 1%; 
-    left: 1%; 
-    width: 95%; 
-    height: 95%;    
-}
-#BookManagementSystem{
-    display: none;
-    position: fixed;
-    top: 1%; 
-    left: 1%; 
-    width: 95%; 
-    height: 95%; 
-}
-#DatingApplicationManagementSystem{
-    display: none;
-    position: fixed;
-    top: 1%; 
-    left: 1%; 
-    width: 95%; 
-    height: 95%; 
-}
-  
-p{
+p {
     font-family: Arial, Verdana, sans-serif;
     color: #000000;
 }
-hr{
+
+hr {
     color: #CAC2FF;
 }
-.video_frame{
+
+.video_frame {
     text-align: center;
 }
-.git_link{
+
+.git_link {
     text-shadow: none;
-    padding: 10px;
+    padding: 1%;
     border: 2px solid #CAC2FF;
 }
-.contact_div{
+
+.contact_div {
     position: relative;
-    top: 20%; 
-    left: 20%;
+    top: 30%;
+    left: 30%;
 }
-.horizontal_div{
-    background-color:   #f7ffc2;
-    color:  #CAC2FF;
+
+.horizontal_div {
+    background-color: #f7ffc2;
+    color: #CAC2FF;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    font-size: 100px;
+    font-size: 5vw; 
     text-align: center;
     border: 2px solid #CAC2FF;
-    margin: 10px;
-    
+    margin: 1%;
 }
+
