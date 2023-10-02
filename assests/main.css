@@ -71,6 +71,11 @@ a:hover {
     width: 10%;
     margin: 1%;
 }
+.buttons_on_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .about_div {
     font-family: Arial, Verdana, monospace;
@@ -137,12 +142,14 @@ a:hover {
 .DisplayProjectInfo {
     background-color: #494753;
     overflow: auto;
+    margin: 1%;
 }
 
 .DisplayProjectInfo h2, a, h3 {
     background-color: #494753;
     color: #ffffff;
     font-size: 2vw; 
+    margin: 2%;
 }
 
 .DisplayProjectInfo p {
@@ -172,6 +179,7 @@ a:hover {
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 
 p {
