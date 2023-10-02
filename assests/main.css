@@ -1,0 +1,211 @@
+
+*{
+    background-color:   #f7ffc2;
+    box-align: center;
+    
+}
+html{
+    padding: 80px;
+    overflow: hidden;
+}
+header{
+    border-top: 2px solid #CAC2FF;
+    border-bottom: 2px solid #CAC2FF;
+    padding: 100px;
+}
+h1{
+    font-family: Arial, Verdana, monospace;
+    font-size: 100px;
+    text-align: center;
+    color: #CAC2FF;
+}
+nav{
+    text-align: center;
+    padding: 10px;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #CAC2FF;
+    border: 2px solid #CAC2FF;
+    padding: 30px;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+input:hover{
+    background-color: #CAC2FF;
+    color: #f7ffc2;
+
+}
+
+article{
+    display: none;
+    position: fixed;
+    top: 1%; 
+    left: 1%; 
+    width: 95%; 
+    height: 95%; 
+}
+a{
+    color: #CAC2FF;
+    text-decoration: none; 
+    font-style: normal; 
+}
+a:hover{
+    background-color: #CAC2FF;
+    color: #f7ffc2;
+}
+.about_div{
+    font-family: Arial, Verdana, monospace;
+    font-size: 30px;
+    text-align: left;
+    color: #CAC2FF;
+    text-shadow: 0 0 1px #000000, 0 0 1px #000000;
+    position: relative;
+    top: 20%; 
+    left: 2%;
+    width: 80%; 
+    height: 55%; 
+}
+#projects{
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+}
+.projects_div{
+    color: #CAC2FF;
+    background-color: #CAC2FF;
+}
+
+.project_row {
+    width: 1200px;
+    height: 45%;
+    padding: 10px;
+    margin: 5px;
+    display: flex; /* Use flexbox to center its contents horizontally and vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .project_clmn {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+    display: flex; /* Use flexbox to center its contents horizontally and vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #CAC2FF;
+}
+.project_clmn:hover {
+    background-color: #CAC2FF;
+}
+
+.project_Name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #CAC2FF;
+    transition: background-color 0.3s, color 0.3s;
+}
+.project_clmn:hover .project_Name {
+    background-color: #CAC2FF;
+    color: #f7ffc2;
+}
+
+.DisplayProjectInfo{
+    background-color: #494753;
+    overflow: auto;
+}
+.DisplayProjectInfo h2, a, h3{
+    background-color: #494753;
+    color: #ffffff;
+    font-size: 30px;
+}
+.DisplayProjectInfo p{
+    background-color: #494753;
+    color: #ffffff;
+    font-size: 20px;
+}
+.back_button{
+    width: 5%;
+    height: 5%;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #494753;
+    text-shadow: none;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #CAC2FF;
+}
+
+#FastAPI{
+    display: none;
+    position: fixed;
+    top: 1%; 
+    left: 1%; 
+    width: 95%; 
+    height: 95%;     
+}
+
+#BankingApplication{
+    display: none;
+    position: fixed;
+    top: 1%; 
+    left: 1%; 
+    width: 95%; 
+    height: 95%;    
+}
+#BookManagementSystem{
+    display: none;
+    position: fixed;
+    top: 1%; 
+    left: 1%; 
+    width: 95%; 
+    height: 95%; 
+}
+#DatingApplicationManagementSystem{
+    display: none;
+    position: fixed;
+    top: 1%; 
+    left: 1%; 
+    width: 95%; 
+    height: 95%; 
+}
+  
+p{
+    font-family: Arial, Verdana, sans-serif;
+    color: #000000;
+}
+hr{
+    color: #CAC2FF;
+}
+.video_frame{
+    text-align: center;
+}
+.git_link{
+    text-shadow: none;
+    padding: 10px;
+    border: 2px solid #CAC2FF;
+}
+.contact_div{
+    position: relative;
+    top: 20%; 
+    left: 20%;
+}
+.horizontal_div{
+    background-color:   #f7ffc2;
+    color:  #CAC2FF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    border: 2px solid #CAC2FF;
+    margin: 10px;
+    
+}

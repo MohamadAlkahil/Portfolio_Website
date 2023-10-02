@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    
+    <title>Mohamad Alkahil</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assests/main.css">
+
+    <script type="text/javascript" src="/assests/article.js"></script>
+</head>
+<body>
+    <header>
+        <h1>MOHAMAD ALKAHIL</h1>
+        <nav>
+            <ul>
+                <input type="button" onclick="aboutDisplay()" value="ABOUT" class="about_button">
+                <input type="button" onclick="projectsDisplay()" value="PROJECTS">
+                <input type="button" onclick="resumeDisplay()" value="RESUME">
+                <input type="button" onclick="contactDisplay()" value="CONTACT">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="about">
+            <div class="home">
+                <input type="button" onclick="aboutNone()" value="HOME">
+            </div>
+            <div class="about_div">
+                <div>In 2017, I discovered my passion for technology when I enrolled in an introductory Computer Engineering class during high school. It was then that I realized that building robots and coding are not reserved for geniuses - I had the potential to excel in this field. Fast forward six years, and I am now a recent graduate of Computer Engineering from Toronto Metropolitan University, specializing in Software Engineering.</div>
+                </br>
+                <div>My journey continues as I actively enhance my software development skills through practical projects, bridging the gap between theoretical knowledge and real-world applications. My current goal is to become a proficient Full Stack Software Developer. To see my current projects and progress, check out the Projects section.</div>					
+                </br>
+                <div>When I'm not immersed in my laptop, you'll often find me in the gym, experimenting in the kitchen, baking delicious treats, or enjoying quality time with friends.</div>					
+            </div>
+        </article>
+
+        <article id="projects">
+            <div class="home">
+                <input type="button" onclick="projectsNone()" value="HOME">
+            </div>
+
+            <div>
+                <div class="project_row">
+                    <div class="project_clmn" onclick="FastAPI()">
+                        <p class="project_Name">FastAPI Application</p>
+                        <div id="FastAPI">
+                            <div class="DisplayProjectInfo">
+                                <h2><a href="/index.html" class="back_button" >X</a></h2>
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/TcWUQnB_nxE"></iframe>
+                                <h2><a href="https://github.com/MohamadAlkahil/FastAPI_Application/tree/main" class="git_link">Github</a></h2>
+                                <h3>Tools Used:</h3>
+                                <p>Python, FastAPI, Docker, Azure, JSON, Hashlib, PyCharm IDE</p>
+                                <h3>Desciption:</h3>
+                                <p>This Python project simulates rovers navigating a minefield represented as a 2D array, where each cell contains either a mine (non-zero) or is empty (zero). The rover can follow commands like turning left (L), turning right (R), moving forward (M), and digging (D). The code sequentially processes each rover's commands, starting at the initial position (0,0) facing south, and calculates the rover's path on the map. It marks the path with "*" symbols and handles scenarios where rovers encounter mines. If a rover doesn't dig a mine and moves, the mine explodes, and the remaining commands are ignored. The project is split into a Server and an Operator. The FastAPI HTTP server provides various endpoints that are to be used by the operator to control the rover. The server is deployed as a local container through Docker and then hosted as a web app on Azure. The operator is a command line interface that takes keyboard inputs from the application's end user to control the rover.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="project_clmn" onclick="BankingApplication()"">
+                        <p class="project_Name">Banking Application</p>
+                        <div id="BankingApplication">
+                            <div class="DisplayProjectInfo">
+                                <h2><a href="/index.html" class="back_button" >X</a></h2>
+                                <iframe width="420" height="315"src="https://www.youtube.com/embed/S8i-CzOfWQo"></iframe>
+                                <h2><a href="https://github.com/MohamadAlkahil/Banking_Application/tree/master" class="git_link">Github</a></h2>
+                                <h3>Tools Used:</h3>
+                                <p>SQLite3, SQL, Netbeans IDE, Java, JavaFX, JavaFX Scene Builder,JDBC (Java Database Connectivity), SHA-256 Hashing</p>
+                                <h3>Desciption:</h3>
+                                <p>This Java-based project is a bank management system. It consists of several classes representing various aspects of the banking system, including actors (customers and managers), account levels, and user interface components. The project primarily focuses on user authentication, customer management, and basic banking operations. The project integrates with an SQLite database to store customer and manager information. It retrieves and updates data from this database as needed for authentication and customer management. SHA256 is used for password hashing to ensure security. The transaction fee for each user is determined based on their account level and is implemented using the state design pattern. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_row">
+                    <div class="project_clmn" onclick="BookManagementSystem()"">
+                        <p class="project_Name">Book Management System</p>
+                        <div id="BookManagementSystem">
+                            <div class="DisplayProjectInfo">
+                                <h2><a href="/index.html" class="back_button" >X</a></h2>
+                                <iframe width="420" height="315"src="https://youtube.com/embed/bBUHB5sBBtk"></iframe>
+                                <h2><a href="https://github.com/MohamadAlkahil/Book_Management_System" class="git_link">Github</a></h2>
+                                <h3>Tools Used:</h3>
+                                <p>SQLite3, SQL, Eclipse IDE, Java, JDBC (Java Database Connectivity)</p>
+                                <h3>Desciption:</h3>
+                                <p>This project is a DBMS for storing and managing information related to users, orders, publishers, books, genres, book-genre associations, and user feedback. It ensures data integrity through primary keys, foreign key constraints, and unique constraints. The schema serves as the foundation for the functionality of the Java-based database query application. The command-line application allows users to retrieve specific information from the database, such as book ratings, author details, book prices, and more, based on their query selections.</p> 
+                        </div>
+                    </div>
+                </div>
+                    <div class="project_clmn" onclick="DatingApplicationManagementSystem()"">
+                        <p class="project_Name">Dating Application Management System</p>
+                        <div id="DatingApplicationManagementSystem">
+                            <div class="DisplayProjectInfo">
+                                <h2><a href="/index.html" class="back_button" >X</a></h2>
+                                <h2><a href="https://github.com/MohamadAlkahil/Dating_Management_System/tree/main" class="git_link">Github</a></h2>
+                                <h3>Tools Used:</h3>
+                                <p>sqldeveloper, Oracle SQL, MobaXterm, Linux</p>
+                                <h3>Desciption:</h3>
+                                <p>This project is a database management system for a dating application using Oracle SQL. The database schema is defined through SQL statements, and various shell scripts are provided to interact with the database, including table creation, data population, and querying. The DBMS is designed to handle various aspects of the dating application, including user profiles, messaging, likes, matches, and interactions with outside companies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="resume">
+            <div class="home">
+                <input type="button" onclick="resumeNone()" value="HOME">
+            </div>
+            <embed src="/files/Resume.pdf" width="100%" height="100%" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+        </article>
+
+        <article id="contact">
+            <div class="home">
+                <input type="button" onclick="contactNone()" value="HOME">
+            </div>
+            <div class="contact_div">
+                <a href="mailto:malkahil@torontomu.ca" class="horizontal_div">EMAIL</a>
+                <a href="https://www.linkedin.com/in/mohamad-alkahil/" class="horizontal_div">LINKEDIN</a>
+                <a href="https://github.com/MohamadAlkahil" class="horizontal_div">GITHUB</a>
+            </div>
+        </article>
+    </main>
+</body>
+<footer>
+</footer>
+
+
+</html>
+
